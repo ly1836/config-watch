@@ -39,11 +39,11 @@ public class config {
     public DruidDataSource dataSource(@Autowired PropertiesConfiguration properties) {
         DruidDataSource dataSource = new DruidDataSource();
         //PropertiesConfiguration properties = new PropertiesConfiguration("application.properties");
-        String driverClassName = properties.getString("my.datasource.db1.driver-class-name");
+        String driverClassName = properties.getString("my.datasource.db.driver-class-name");
         dataSource.setDriverClassName(driverClassName);
-        dataSource.setUrl(properties.getString("my.datasource.db1.jdbc-url"));
-        dataSource.setUsername(properties.getString("my.datasource.db1.username"));
-        dataSource.setPassword(properties.getString("my.datasource.db1.password"));
+        dataSource.setUrl(properties.getString("my.datasource.db.jdbc-url"));
+        dataSource.setUsername(properties.getString("my.datasource.db.username"));
+        dataSource.setPassword(properties.getString("my.datasource.db.password"));
 
         return dataSource;
     }
