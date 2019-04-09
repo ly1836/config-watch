@@ -32,8 +32,8 @@ import javax.annotation.PostConstruct;
  * zookeeper客户端配置
  * </p>
  */
-@Component("zkCentralConfigurer")
-/*@Configuration
+/*@Component("zkCentralConfigurer")
+@Configuration
 @EnableTransactionManagement*/
 public class ZookeeperCentralConfigurer {
 

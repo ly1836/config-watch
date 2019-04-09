@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Properties;
 
-@Repository("zkPlaceholderConfigurer")
+//@Repository("zkPlaceholderConfigurer")
 public class ZookeeperPlaceholderConfigurer extends PropertyPlaceholderConfigurer {
     @Autowired
     private ZookeeperCentralConfigurer zkCentralConfigurer;
